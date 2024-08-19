@@ -1,5 +1,5 @@
 function countdown() {
-    const targetDate = new Date(Date.UTC(2024, 7, 22, 8, 0, 0)); 
+    const targetDate = new Date(Date.UTC(2024, 7, 22, 7, 0, 0)); // 7 = August because months are 0-indexed
     const now = new Date();
     const timeDifference = targetDate - now;
 
@@ -21,5 +21,5 @@ function countdown() {
 // Update the countdown every second
 setInterval(countdown, 1000);
 
-
+// Initial call
 countdown();
